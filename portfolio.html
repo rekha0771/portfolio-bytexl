@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekha's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            background-color: #f6e2e2; /* Baby pink background */
+        }
+
+        /* Header Section */
+        header {
+            background-color: #343a40;
+            color: #f8f9fa;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f8f9fa;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #495057;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #343a40;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin: 20px 0;
+            color: #495057;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f1f1;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #495057;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #adb5bd;
+        }
+
+        /* Colors for Different Sections */
+        #about h2 { color: #ff5733; } /* About Me: Red-Orange */
+        #education h3 { color: #c70039; } /* Education: Red */
+        #skills h3 { color: #900c3f; } /* Skills: Dark Red */
+        #certifications h3 { color: #581845; } /* Certifications: Purple */
+        #projects h2 { color: #1d3557; } /* Projects: Navy Blue */
+        #contact h2 { color: #2a9d8f; } /* Contact Me: Teal */
+
+        /* Project Images */
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Set a uniform size */
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .project img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project a {
+            color: #1d3557;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>Rekha's Portfolio</h1>
+            <p>- Engineer-to-be -</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an engineer-to-be with a curious mind and a passion for turning ideas into reality. Currently pursuing my B.Tech degree, I am diving deep into the world of AI, where I am blending creativity with technical skills. I thrive on challenges and am always eager to learn and grow. My goal is to innovate solutions that make a difference, one project at a time.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h3>Education</h3>
+        <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+        <p>Vignan's Foundation For Science, Technology And Research, Vadlamudi, Guntur</p>
+        <p>CGPA: 8.00</p>
+
+        <h4>Intermediate</h4>
+        <p>Oxford Junior College, Narasaraopet</p>
+        <p>Percentage: 94.6%</p>
+
+        <h4>10th Standard</h4>
+        <p>Tiny Tots High School</p>
+        <p>CGPA: 10</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h3>Skills</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML & CSS</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h3>Certifications</h3>
+        <ul>
+            <li><b>NPTEL</b>: Leadership and Team Effectiveness, E-Business, Introduction to Internet of Things</li>
+            <li><b>CISCO</b>: Introduction to Packet Tracer, Network Essentials</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+            <a href="https://github.com/prnvbaraiya/Air-Writing-and-Character-Recognition" target="_blank">
+                <img src="https://www.mdpi.com/sensors/sensors-23-09475/article_deploy/html/images/sensors-23-09475-g017-550.jpg" alt="Air-Scripted Alphabet Recognition">
+                <h4>AN EFFECTIVE DEEP LEARNING MODEL FOR AIR-SCRIPTED ALPHABET RECOGNITION SYSTEM</h4>
+            </a>
+            <p>Developed a deep learning model for recognizing air-scripted alphabets. The model, trained on various hand-drawn letter hand-drawn letter patterns, achieved a 90% accuracy, showcasing its potential in gesture-based communication systems.</p>
+        </article>
+
+        <article class="project">
+            <a href="https://github.com/Shreyas3108/house-price-prediction" target="_blank">
+                <img src="https://media.licdn.com/dms/image/D4D12AQF7aWCrSGv5_w/article-cover_image-shrink_720_1280/0/1708328033213?e=2147483647&v=beta&t=7tGBbmwb88d1DyBDQ4Du5Pn7CL3DFlFzM0aGpYzvZts" alt="House Price Prediction">
+                <h4>HOUSE PRICE PREDICTION</h4>
+            </a>
+            <p>Built a machine learning model to predict house prices based on location, size, and market trends. The model reached a 90% accuracy, offering valuable insights for real estate professionals and potential buyers.</p>
+        </article>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:rekhadesireddy2004@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+        <p>You can also reach me via email at <a href="mailto:rekhadesireddy2004@gmail.com">rekhadesireddy2004@gmail.com</a>.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Rekha Desireddy. All rights reserved.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/rekha-desireddy-902689274/" target="_blank">LinkedIn</a>.</p>
+    </footer>
+
+</body>
+</html>
+
+
+      
